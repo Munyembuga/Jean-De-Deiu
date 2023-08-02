@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signcss.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="signupbox"> 
+         <h1>welcome to Agroexchangecrops</h1><br><br>
+        <h3 >Register</h3>
+    
+      
+       
+        <form action="">
+        <div class="inputgroup">
+            <label for="">  Full name:</label>
+            <input type="text" name="fname" placeholder="full name" id="fname-name" onkeyup = "validatename()">
+            <span id = "fname-error"> </span>
+        </div>
+        <div class="inputgroup">
+            <label for="">   Phone:</label>
+            <input type="text" name="phone" placeholder=" Enter phone number" id="contact-phone" onkeyup="validatephone()">
+            <span id="phone-error" ></span>
+        </div>
+        <div class="inputgroup">
+            <label for="">   Email:</label>
+            <input type="text" name="email" placeholder="email" id="contact-email" onkeyup="validateemail()" >
+            <span id="email-error"> </span>
+        </div>
+        <div class="inputgroup">
+            <label for="">Country:</label>
+            <input type="text" name="country" placeholder="enter country name"  id="contact-country" onkeyup="validatecountry()">
+            <span id="country-error"> </span>
+        </div>
+        <div class="inputgroup">
+            <label for=""> Your message</label>
+            <textarea name=""   rows="5" placeholder="Enter Your message" id="contact-message" onkeyup="validatemessage()">
+            </textarea> <br>
+            <span id = "message-error"></span>
+        </div>
+        <div class="inputgroup">
+            
+        </div>
+       
+       
+        <label for="">  Province:</label> <br>18
+    <select>
+            <option name="province" />SELECT PROVINCE</option><br> <br>
+            <option name="hobby" /> Amajyaruguru</option><br> <br>
+            <option name="hobby" />Amajyepfo</option><br> <br>
+            <option name="hobby" />kigali</option><br> <br>
+            <option name="hobby" />Uburengerazuba</option><br><br>
+            <option name="hobby" />Uburasirazuba</option><br><br>
+           
+    </select> <br><br>
+        <label for=""> District:</label> <br>
+        <select>
+            <option name="Province" />SELECT DISTRICT</option><br>
+        <option name="hobby" /> Amajyaruguru</option><br>
+        <option name="hobby" />Amajyepfo</option><br>
+        <option name="hobby" />kigali</option><br>
+        <option name="hobby" />Uburengerazuba</option><br>
+        <option name="hobby" />Uburasirazuba</option><br>
+       
+    </select><br><br>
+    <label for="">Sector:</label> <br>
+    <select>
+        <option name="sector" />SELECT SECTOR</option><br>
+    <option name="hobby" /> Amajyaruguru</option><br>
+    <option name="hobby" />Amajyepfo</option><br>
+    <option name="hobby" />kigali</option><br>
+    <option name="hobby" />Uburengerazuba</option><br>
+    <option name="hobby" />Uburasirazuba</option><br>
+   
+</select><br><br>
+<label for="">Cell:</label> <br>
+<select>
+    <option name="cell" />SELECT CELL</option><br>
+<option name="hobby" /> Amajyaruguru</option><br>
+<option name="hobby" />Amajyepfo</option><br>
+<option name="hobby" />kigali</option><br>
+<option name="hobby" />Uburengerazuba</option><br>
+<option name="hobby" />Uburasirazuba</option><br>
+
+</select> <br> <br>
+<label for="">Villade: </label><br>
+<select>
+    <option name="vilage" >SELECT VILLAGE</option><br>
+<option name="hobby" > Amajyaruguru</option><br>
+<option name="hobby" >Amajyepfo</option><br>
+<option name="hobby" >kigali</option><br>
+<option name="hobby" >Uburengerazuba</option><br>
+<option name="hobby" >Uburasirazuba</option><br>
+
+</select> <br> <br>
+<label for="">GENDER:</label> <br>
+<input type="radio" name="gender" id="gender"  />female<br>
+<input type="radio" name="gender"id="gender"  />male<br>
+<input type="radio" name="gender" id="gender"  /> unkonwn<br><br>
+<span id="radio" >ggguu</span>
+<div class="categories">
+     <h4>Which categories:</h4><br>
+     <input type="checkbox" name="hobby" id="categories" value = "self farmer" /> self farmer <br>
+     <input type="checkbox" name="hobby" id="categories" value = "Cooperative"/>Cooperative<br>
+     <input type="checkbox" name="hobby" id="categories" value = "Group farmer" />Group farmer<br>
+     <input type="checkbox" name="hobby" id="categories" value = "Industry" /> Industry<br>
+     <input type="checkbox" name="hobby" id="categories" value = "Busibessman" /> Busibessman<br>
+    </div>
+    <label for=""> New password</label>     
+    <input type="password"name= "password"placeholder=" new password"/> <br> <br>
+    <label for="">Confirm password:</label>
+    <input type="text" name="confirm password" placeholder="phone"/><br> <br>
+    <input type="checkbox" name="hobby" /> Accept term&policy<br>
+
+<div>
+  <button onclick = " return validatesubmitt() "> Submitt</button>
+    <span id="submit-error" style="color: red;"> </span>
+</div>
+          
+        </form>
+    <p>By clicking the Sign up button ,you agree to our <br>
+    <a href="">Term and Condition </a> and <a href="">Police And Privancyp
+    </a> </p></div>
+    
+    <p class="par">Already have an  account ? <a href="login.html"> Login here </a></p>
+   
+    <script src="form.js"></script>
+</body>
+</html>
